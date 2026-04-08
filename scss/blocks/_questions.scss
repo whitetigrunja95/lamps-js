@@ -1,0 +1,109 @@
+.questions {
+  padding: 0 0 78px;
+
+  &__wrapper {
+    position: relative;
+    padding: 70px 0 0;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46.8px;
+    max-width: 800px;
+    margin: 0 0 40px 0;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    right: 70px;
+  }
+
+  &__text {
+    max-width: 733px;
+    margin: 0 0 40px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 290px;
+    gap: 40px;
+    align-items: start;
+    margin: 0 0 40px 0;
+  }
+
+  &__btn {
+    margin-top: 27px;
+  }
+
+  .questions-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  .modal__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .modal__dialog {
+    position: relative;
+    width: min(520px, calc(100% - 32px));
+    margin: 15vh auto 0;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 24px 24px 22px;
+  }
+
+  .modal__close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 24px;
+    height: 24px;
+
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .modal__close:focus,
+  .modal__close:focus-visible,
+  .modal__close:active {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal__close:hover {
+    background: transparent;
+  }
+
+  .modal__status {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+
+  .modal__icon {
+    display: block;
+    width: 36px;
+    height: 36px;
+  }
+}
+
+}
